@@ -1,0 +1,247 @@
+{
+  "nava": "نافا",
+
+
+  "joinUs": "سجل حسابك وانضم الينا",
+  "main": "الرئيسية",
+  "orders": "طلباتي",
+  "wallet": "المحفظة",
+  "settings": "الإعدادات",
+  "welcome": "مرحبا",
+  "searchWord": "ابحث عن الخدمة التي تريدها",
+  "welcomeBack": "أهلاً بك وبعودتك",
+  "loginWithUs": "باشر بالدخول لحسابك لدينا",
+  "newOrders": "الجديدة",
+  "confirmedOrders": "المؤكدة",
+  "finishedOrders": "المنتهية",
+  "supportOrders": "الضمان",
+  "available": "متاح لإستقبال الطلبات",
+  "browseOrders": "قم بتصفح الطلبات المرسلة لك",
+  "statistics": "الإحصائيات",
+  "extractPDF": "إصدار ملف PDF",
+  "savedMoney": "الملبغ المحجوز",
+  "dateAndNum": "التاريخ ورقم الطلب",
+  "addOrMinus": "المضاف أو المخصوم",
+  "balance": "الرصيد",
+  "charge": "شحن رصيد",
+  "status": "الحالة",
+  "notes": "ملاحظات",
+  "to": "إلي",
+  "showMap": "عرض الخريطة",
+  "operationsFrom": "العمليات من",
+  "rejectOrder": "رفض الطلب",
+  "acceptOrder": "قبول الطلب",
+  "payWay": "وسيلة الدفع",
+  "vat": "ضريبة القيمة المضافة",
+  "exDate": "تاريخ التنفيذ",
+  "exTime": "وقت التنفيذ",
+
+
+
+  "neighbor": "الحي",
+  "street": "الشارع",
+  "floor": "الدور",
+  "house": "رقم المنزل",
+  "serviceDetails": "تفاصيل الخدمة",
+  "addedNotes": "ملاحظات اضافية",
+  "noNotes": "لا توجد ملاحظات",
+  "noMediaNotes": "لا توجد ملاحظات رسومية",
+  "viewImg": "عرض الصورة",
+  "writeRejectReason": "من فضلك اكتب سبب الرفض",
+  "orderRejected": "قمت برفض الطلب للتو",
+
+
+
+
+  "lang": "اللغة",
+  "selectLang": "من فضلك اختر لغة التطبيق",
+  "en": "English",
+  "ar": "العربية",
+  "urdu": "الأردو",
+
+  "techApp": "تطبيق الفني",
+  "login": " تسجيل الدخول ",
+  "register":" تسجيل جديد ",
+  "bankNum": "رقم الحساي البنكي",
+  "acceptTerms": " قرأت و أوافق علي الشروط و الأحكام",
+  "plzAcceptTerms": "يرجي الموافقة علي الشروط و الأحكام للمتابعة",
+  "restorePassword": "إستعادة كلمة المرور",
+  "carsLeasing": "تأجير سيارات",
+  "flatsLeasing": "تأجير شقق",
+  "carLeasing": "تأجير سيارة",
+  "flatLeasing": "تأجير شقة",
+  "advTitle": "عنوان الإعلان",
+  "addImgs": "إضافة صور",
+  "rs": " ر.س ",
+  "RS": " ريال\n سعودي ",
+  "searchHere": "ابحث هنا",
+  "search": "البحث",
+  "willSendSMS": "سوف يتم إرسال كود التحقق لرقم الجوال الخاص بك عبر الرسائل",
+  "visitor": " الدخول كزائر ",
+  "name": " الإسم ",
+  "phone": " رقم الجوال ",
+  "password": " رمز المرور ",
+  "confirmPassword": " تأكيد رمز المرور ",
+  "mail": " البريد الإلكتروني ",
+  "address": "العنوان",
+  "loading": "جاري التحميل",
+  "about": "عن التطبيق",
+  "terms": "الشروط و الأحكام",
+  "contactUs": "تواصل معنا",
+  "appLang": "لغة التطبيق",
+  "langChanged":"Language Changed Successfully",
+  "confirm": "تأكيد",
+  "plzSelectLang": "برجاء تحديد لغة التطبيق",
+  "more": "المزيد",
+  "fqs": "الأسئلة المتكررة",
+  "logout": "تسجيل الخروج",
+  "send": "إرسال",
+  "next": "التالي",
+  "enter": "دخول",
+  "cancel": "إلغاء",
+  "loginToContinue": "قم بتسجيل الدخول للمتايعة",
+  "activeAccount": "تفعيل الحساب",
+  "newLogin": "حساب جديد",
+  "loginAsVisitor": "الدخول كزائر",
+  "urWelcome": "مرجبا بك",
+  "enterYourPhone": "قم بإدخال رقم الجوال الخاص بك لنتمكن من اجراء طلبك",
+  "don'tHaveAccount": "ليس لديك حساب ؟ ",
+  "haveAccount": "لديك حساب ؟ ",
+  "forgetPassword": "نسيت كلمة المرور ؟ ",
+  "codeNotSent": "لم يصلني الكود ! ",
+  "resend": "إعادة ارسال الكود",
+  "unMatchPass": "كلمتي المرور غير متطابقتين",
+  "plzFillData": "برجاء استكمال البيانات",
+  "loginSuccessPlzActive": "تم التسجيل بنجاح .. يرجي تفعيل الحساب",
+  "registerSuc": "تم تفعيل الحساب بنجاح",
+  "confirmCode": "كود التفعيل",
+  "enterCode": "ادخل كود التفعيل",
+  "addImg": "إضافة صورة",
+  "roomsCount": "عدد الغرف",
+  "hallsCount": "عدد الصالات",
+  "toiletsCount": "عدد الحمامات",
+  "turnNum": "رقم الدور",
+  "priceTime": "مدة السعر",
+  "type": "النوع",
+  "suc": "تم إضافة الإعلان بنجاح",
+  "selectType": "اختر النوع",
+  "netError": "حدث مشكلة في الإتصال",
+  "floorNum": "الدور",
+  "selectPayType": "اختر طريقة الدفع",
+  "plzSelectPayType": "برجاء اختيار طريقة الدفع",
+  "Reserve": "حجز",
+  "rate": "تقييم",
+  "successOrder": "تم قبول الطلب بنجاح",
+  "needDeleteAdv": "هل تريد حذف هذا الإعلان ؟",
+  "editMyAds": "تعديل الإعلان",
+
+
+
+
+
+
+
+
+
+
+
+  "noVendors": "لا يوجد موزعون",
+  "noti": "الإشعارات",
+  "noNoti": "لا توجد لديك اشعارات",
+  "backHome": "الرجوع للرئيسية",
+
+  "yes": "نعم",
+  "no": "لا",
+  "selectImg": "اختر الصورة",
+  "fromCam": "من الكاميرا",
+  "fromGallery": "من المعرض",
+
+  "note": "ملاحظة",
+  "optional": "اختياري",
+  "cong": "تهانينا !",
+  "cash": "الدفع كاش",
+  "cash1": "الدفع عند الاستلام",
+  "online": "الدفع باستخدام بطاقة الدفع",
+  "wallet1": "الدفع من خلال المحفظة",
+  "deliveryInfo": "بيانات التوصيل",
+  "enterName": "ادخل الإسم",
+  "enterPhone": "ادخل رقم الجوال",
+  "details": "التفاصيل",
+  "enterDetails": "الرجاء كتابة تفاصيل العنوان",
+  "selectPay": "حدد طريقة الدفع",
+  "current": "طلبات حالية",
+  "ended": "طلبات منتهية",
+  "noOrders": "لا توجد طلبات حتي الان",
+  "noServices": "لا توجد خدمات حتي الان",
+  "orderNum": "رقم الطلب",
+  "orderDate": "تاريخ الطلب",
+  "total": "الإجمالي",
+  "delete": "حذف",
+  "enterEmail": "ادخل البريد الإليكتروني",
+  "activeCode": "كود التفعيل",
+  "price": "السعر",
+  "selectPriceTime": "اختر مدة السعر",
+  "chooseCurrentLocation": "اختر الموقع الحالي",
+  "seatsNum": "عدد الركاب",
+  "gearType": "نوع الجير",
+  "selectGearType": "حدد نوع الجير",
+  "carModel": "موديل السيارة",
+  "selectCarModel": "حدد موديل السيارة",
+  "noSearch": "لا توجد نتائج لبحثك",
+  "requestedOrders": "طلبات العملاء",
+  "myOrders": "الطلبات",
+  "processingOrders": "طلبات قيد التنفيذ",
+  "advDetails": "تفاصيل الاعلان",
+  "passCount": "عدد الركاب",
+  "carPrice": "سعر السيارة",
+  "writeMsg": "أكتب رسالتك",
+
+
+
+  "confirmOrder":"تأكيد الطلب",
+  "orderDone": "تم تنفيذ الطلب بنجاج",
+  "wait": "انتظر قليلا",
+  "addressDetails": "تفاصيل العنوان",
+  "orderDetails": "تفاصيل الطلب",
+  "ok": "حسنا",
+  "need_exit": "هل حقا تريد الخروج ؟",
+  "chat": "المحادثات",
+  "profile": "الملف الشخصي",
+  "myAds": "اعلاناتي",
+  "suggestions": "الشكاوي والمقترحات",
+  "category": "القسم",
+  "rateOwner": "تقييم المعلن",
+  "changePass": "تغيير كلمة المرور",
+  "saveChanges": "حفظ التغيرات",
+  "oldPass": "كلمة المرور القديمة",
+  "newPass": "كلمة المرور الجديدة",
+  "confirmPass": "تأكيد كلمة المرور",
+  "edit": "تعديل",
+  "chats": "المحادثات",
+  "yourMsg": "رسالتك",
+  "enterYourMsg": "أدخل رسالتك",
+  "viaSocial": "او عبر التواصل الاجتماعي",
+  "contactViaSocial": "يمكنك التواصل معنا عبر حساباتنا علي مواقع التواصل الاجتماعي",
+  "addAdv": "إضافة إعلان"
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

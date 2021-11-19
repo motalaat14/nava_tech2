@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "60460928778",
+    "project_id": "navauser-989f9",
+    "storage_bucket": "navauser-989f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60460928778:android:4fe528222c2c98df59f4f3",
+        "android_client_info": {
+          "package_name": "com.talaat.nava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60460928778-0nifq0n47su55d6ftpb0edl0sp8qrmvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlb8PHSlYuwKpN68V8lam8RUYHnDT5chA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60460928778-0nifq0n47su55d6ftpb0edl0sp8qrmvq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "60460928778-uo9gfmce1e97jhguililp3sg7020ulk0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.talaat.nava"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60460928778:android:39423306d8b4d3e259f4f3",
+        "android_client_info": {
+          "package_name": "com.talaat.nava_tech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60460928778-0nifq0n47su55d6ftpb0edl0sp8qrmvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlb8PHSlYuwKpN68V8lam8RUYHnDT5chA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60460928778-0nifq0n47su55d6ftpb0edl0sp8qrmvq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "60460928778-uo9gfmce1e97jhguililp3sg7020ulk0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.talaat.nava"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
