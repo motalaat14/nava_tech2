@@ -10,7 +10,6 @@ import 'package:nava_tech/layouts/Home/orders/SupportOrders.dart';
 import 'package:nava_tech/layouts/more/contact_us/ContactUs.dart';
 import 'package:nava_tech/res.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:titled_navigation_bar/titled_navigation_bar.dart';
 
 import 'drawer/MyDrawer.dart';
 
@@ -24,12 +23,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   GlobalKey<ScaffoldState> _scaffold = new GlobalKey();
-  bool open=true;
+  bool open = true;
 
-  String name,phone,img;
-  initUserData()async{
+  String name, phone, img;
+  initUserData() async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
     setState(() {
       name = preferences.getString("name");
@@ -67,6 +65,7 @@ class _HomeState extends State<Home> {
       });
     }
   }
+
   void onTapped(int index) {
     setState(() {
       currentTabIndex = index;
@@ -89,36 +88,46 @@ class _HomeState extends State<Home> {
                 child: Row(
                   children: [
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         _scaffold.currentState.openDrawer();
                       },
                       child: Container(
-                        width: 50,height: 50,
+                        width: 50,
+                        height: 50,
                         decoration: BoxDecoration(
-                          border: Border.all(),
+                            border: Border.all(),
                             borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(image: NetworkImage(img))
-                        ),
+                            image: DecorationImage(image: NetworkImage(img))),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal:8),
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.symmetric(vertical:4),
+                            padding: const EdgeInsets.symmetric(vertical: 4),
                             child: Row(
                               children: [
-                                Text("${tr("welcome")} , ",style: TextStyle(fontSize: 16),),
-                                Text(name.toString(),style: TextStyle(fontSize: 16),),
+                                Text(
+                                  "${tr("welcome")} , ",
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                Text(
+                                  name.toString(),
+                                  style: TextStyle(fontSize: 16),
+                                ),
                               ],
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.symmetric(vertical:4),
-                            child: Text(tr("browseOrders"),style: TextStyle(fontSize: 12,fontWeight: FontWeight.w400),),
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Text(
+                              tr("browseOrders"),
+                              style: TextStyle(
+                                  fontSize: 12, fontWeight: FontWeight.w400),
+                            ),
                           ),
                         ],
                       ),
@@ -130,50 +139,56 @@ class _HomeState extends State<Home> {
               elevation: 0,
               actions: [
                 InkWell(
-                  onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (c)=>ContactUs()));
+                  onTap: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (c) => ContactUs()));
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Image(image: ExactAssetImage(Res.contactus),width: 26,),
+                    child: Image(
+                      image: ExactAssetImage(Res.contactus),
+                      width: 26,
+                    ),
                   ),
                 ),
               ],
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.symmetric(horizontal: 15,vertical: 0),
+              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 0),
               decoration: BoxDecoration(
-                color: MyColors.primary,
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
-              ),
+                  color: MyColors.primary,
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(20),
+                      bottomRight: Radius.circular(20))),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(tr("available"),style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
-                  Switch(
-                    trackColor: MaterialStateColor.resolveWith((states) => MyColors.accent),
-                      value: open,
-                      activeColor:  MyColors.green,
-                      onChanged: (val){
-                        setState(() {
-                          open=val;
-                        });
-                      }
+                  Text(
+                    tr("available"),
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
+                  Switch(
+                      trackColor: MaterialStateColor.resolveWith(
+                          (states) => MyColors.accent),
+                      value: open,
+                      activeColor: MyColors.green,
+                      onChanged: (val) {
+                        setState(() {
+                          open = val;
+                        });
+                      }),
                 ],
               ),
-
             )
           ],
         ),
       ),
-
-      drawer: MyDrawer(name: name,phone: phone,img: img),
+      drawer: MyDrawer(name: name, phone: phone, img: img),
       drawerEnableOpenDragGesture: true,
       bottomNavigationBar: Container(
         padding: EdgeInsets.only(top: 1),
-        height: MediaQuery.of(context).size.height * 0.088,
+        height: MediaQuery.of(context).size.height * 0.096,
         color: MyColors.grey.withOpacity(.4),
         child: BottomNavigationBar(
           showUnselectedLabels: true,
@@ -191,19 +206,43 @@ class _HomeState extends State<Home> {
           onTap: onTapped,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Image(image: ExactAssetImage(Res.neworders),width: currentTabIndex==0 ? 30:24,color: currentTabIndex==0?MyColors.primary:MyColors.accent.withOpacity(.7),),
+              icon: Image(
+                image: ExactAssetImage(Res.neworders),
+                width: currentTabIndex == 0 ? 28 : 24,
+                color: currentTabIndex == 0
+                    ? MyColors.primary
+                    : MyColors.accent.withOpacity(.7),
+              ),
               title: Text(tr("newOrders")),
             ),
             BottomNavigationBarItem(
-              icon: Image(image: ExactAssetImage(Res.confirmorders),width: currentTabIndex==1 ? 30:24,color: currentTabIndex==1?MyColors.primary:MyColors.accent.withOpacity(.7),),
+              icon: Image(
+                image: ExactAssetImage(Res.confirmorders),
+                width: currentTabIndex == 1 ? 28 : 24,
+                color: currentTabIndex == 1
+                    ? MyColors.primary
+                    : MyColors.accent.withOpacity(.7),
+              ),
               title: Text(tr("confirmedOrders")),
             ),
             BottomNavigationBarItem(
-              icon: Image(image: ExactAssetImage(Res.endorders),width: currentTabIndex==2 ? 30:24,color: currentTabIndex==2?MyColors.primary:MyColors.accent.withOpacity(.7),),
+              icon: Image(
+                image: ExactAssetImage(Res.endorders),
+                width: currentTabIndex == 2 ? 28 : 24,
+                color: currentTabIndex == 2
+                    ? MyColors.primary
+                    : MyColors.accent.withOpacity(.7),
+              ),
               title: Text(tr("finishedOrders")),
             ),
             BottomNavigationBarItem(
-              icon: Image(image: ExactAssetImage(Res.maintenanceorderrs),width: currentTabIndex==3 ? 30:24,color: currentTabIndex==3?MyColors.primary:MyColors.accent.withOpacity(.7),),
+              icon: Image(
+                image: ExactAssetImage(Res.maintenanceorderrs),
+                width: currentTabIndex == 3 ? 28 : 24,
+                color: currentTabIndex == 3
+                    ? MyColors.primary
+                    : MyColors.accent.withOpacity(.7),
+              ),
               title: Text(tr("supportOrders")),
             ),
           ],
@@ -214,29 +253,6 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // int _selectedIndex = 0;
 //
