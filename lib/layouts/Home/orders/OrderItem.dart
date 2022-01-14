@@ -6,31 +6,32 @@ import 'package:nava_tech/layouts/Home/orders/OrderDetails.dart';
 class OrderItem extends StatelessWidget {
   final int id;
   final String name, img, location, orderNum, status, date, time, from;
-  final bool isConfirmed;
 
-  const OrderItem(
-      {Key key,
-      this.id,
-      this.name,
-      this.location,
-      this.orderNum,
-      this.status,
-      this.date,
-      this.time,
-      this.from,
-      this.img,
-      this.isConfirmed})
-      : super(key: key);
+  const OrderItem({
+    Key key,
+    this.id,
+    this.name,
+    this.location,
+    this.orderNum,
+    this.status,
+    this.date,
+    this.time,
+    this.from,
+    this.img,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.of(context).push(MaterialPageRoute(
+        Navigator.of(context).push(
+          MaterialPageRoute(
             builder: (c) => OrderDetails(
-                  id: id,
-                  isConfirmed: isConfirmed,
-                )));
+              id: id,
+              clientImage: img,
+            ),
+          ),
+        );
       },
       child: Container(
         margin: EdgeInsets.only(top: 8),

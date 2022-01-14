@@ -47,7 +47,6 @@ class _SupportOrdersState extends State<SupportOrders> {
                     date: newOrdersModel.data.data[i].date,
                     time: newOrdersModel.data.data[i].time,
                     from: newOrdersModel.data.data[i].createdDate,
-                    isConfirmed: true,
                   );
                 });
   }

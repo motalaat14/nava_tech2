@@ -47,7 +47,6 @@ class _FinishedOrdersState extends State<FinishedOrders> {
                     date: newOrdersModel.data.data[i].date,
                     time: newOrdersModel.data.data[i].time,
                     from: newOrdersModel.data.data[i].createdDate,
-                    isConfirmed: true,
                   );
                 });
   }
